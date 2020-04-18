@@ -45,7 +45,18 @@ document.querySelector('#login-submit').onclick = function(event) {
         } else if(result == 0) {
             alert('Пользователь не найден!')
         } else {
-            console.log(result)
+            console.log(result);
+            result = JSON.parse(result);
+            var d = new Date();
+            d.setTime(d.getTime() + (60*1000));
+            var expires = d.toUTCString();
+            document.cookie = `email=${result.email}; expires=${expires}; path=/`;
+            location.href = "cabinet.php";
         }
     }
+}
+
+document.querySelector('#logout').onclick = function() {
+    document.cookie = '';
+    location.reload();
 }
