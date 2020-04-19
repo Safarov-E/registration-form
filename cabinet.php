@@ -18,6 +18,21 @@
 <body>
     <h1>User Page</h1>
     <button id="logout">LogOUT</button>
+
+    <form>
+        <div>name: <input type="text" name="name" id="signup-name"></div>
+        <div>password: <input type="text" name="pass" id="signup-pass"></div>
+        <div>birthday: <input type="text" name="birthday" id="signup-birthday"></div>
+        <div>sex:
+            <div><input type="radio" value="male" name="sex" checked class="sex">male</div>
+            <div><input type="radio" value="female" name="sex" class="sex">female</div>
+            <div><input type="radio" value="other" name="sex" class="sex">other</div>
+        </div>
+        <input type="submit" value="update" id="signup-submit">
+    </form>
+
+    <script src="script/ajax.js"></script>
+    <script src="script/get_user_data.js"></script>
     <script src="script/logout.js"></script>
 </body>
 

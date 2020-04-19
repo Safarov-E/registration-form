@@ -55,8 +55,3 @@ document.querySelector('#login-submit').onclick = function(event) {
         }
     }
 }
-
-document.querySelector('#logout').onclick = function() {
-    document.cookie = '';
-    location.reload();
-}
