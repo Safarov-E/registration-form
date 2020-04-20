@@ -1,3 +1,9 @@
 .user-cabinet-header {
     font-size: 20px;
 }
+.site-header {
+    border-bottom: 1px solid #26a69a;
+}
+.site-title {
+    font-size: 24px;
+}
